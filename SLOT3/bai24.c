@@ -16,5 +16,5 @@ int main(){
 			printf("Nam khong nhuan ");
 		}
 	}
-	return 0;
+	
 }
