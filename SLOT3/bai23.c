@@ -8,6 +8,6 @@ int main(){
 	}else if(year%100!=0){
 		printf("Nam nhuan");
 	}else{
-		printf("Nam khong thuan");
+		printf("Nam khong thuan")
 	}
 }
