@@ -1,0 +1,35 @@
+Bài 6: Phân loại tam giácYêu cầu:
+ Nhập vào 3 số thực $a, b, c$ là độ dài 3 cạnh
+ Kiểm tra xem 3 cạnh có tạo thành một tam giác không (Tổng 2 cạnh bất kỳ phải lớn hơn cạnh còn lại).
+ Nếu có, hãy phân loại: Tam giác đều (3 cạnh bằng nhau), tam giác cân (2 cạnh bằng nhau), hay tam giác thường.
+ Gợi ý: Sử dụng if để kiểm tra điều kiện tồn tại tam giác trước, sau đó dùng else if để phân loại.
+
+       BẮT ĐẦU
+         |
+         v
+    Nhập a, b, c
+         |
+         v
+   a<=0 OR b<=0 OR c<=0 ?
+        / \
+      Có   Không
+      |      |
+ Không phải  v
+  tam giác  a+b>c AND
+             a+c>b AND
+             b+c>a ?
+             / \
+           Không  Có
+             |     |
+     Không phải    v
+      tam giác   a==b==c ?
+                   / \
+                Có     Không
+                |        |
+          Tam giác đều   a==b OR
+                         a==c OR
+                         b==c ?
+                          / \
+                       Có     Không
+                       |        |
+                 Tam giác cân  Tam giác thường
